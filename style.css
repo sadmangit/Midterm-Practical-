@@ -92,3 +92,17 @@
         grid-template-columns: 1fr;
     }
 }
+#backToTop {
+    padding: 10px 16px;
+    margin: 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    background-color: #222;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+#backToTop:hover {
+    background-color: #444;
+}
