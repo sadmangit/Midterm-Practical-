@@ -34,3 +34,15 @@
 .main-nav a.active {
     font-weight: 700;
 }
+/* Homepage hero image refinement */
+.hero-visual img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.hero-visual img:hover {
+    transform: scale(1.02);
+}
