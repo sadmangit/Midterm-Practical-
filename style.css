@@ -68,3 +68,27 @@
     object-fit: contain;
     padding: 10px;
 }
+@media (max-width: 600px) {
+    .site-header {
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .main-nav {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .hero-container {
+        flex-direction: column;
+    }
+
+    .hero-visual img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .cart-row {
+        grid-template-columns: 1fr;
+    }
+}
