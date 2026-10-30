@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | TechNova</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Sadman Shams | Student ID: 2330640 -->
+  <header class="site-header">
+    <a class="logo" href="index.html"><span class="logo-mark">T</span> TechNova<span class="logo-dot">.</span></a>
+    <nav class="main-nav" aria-label="Main navigation"><a href="index.html">Home</a><a href="products.html">Products</a><a class="active" href="contact.html">Contact Us</a></nav>
+    <a class="header-cta" href="products.html">Browse products <span>↗</span></a>
+  </header>
+
+  <main>
+    <section class="page-hero contact-hero"><div class="container page-hero-inner"><div><p class="eyebrow"><span class="eyebrow-line"></span> WE'RE HERE TO HELP</p><h1>Let's talk<br><span>about your tech.</span></h1><p>Questions about a product? Need help choosing a gadget? Send us a message.</p></div><img src="images/contact-workspace.jpg" alt="Team collaborating at a desk"></div></section>
+    <section class="section container contact-layout">
+      <div class="contact-copy"><p class="eyebrow">CONTACT TECHNOVA</p><h2>Good questions deserve clear answers.</h2><p>Choosing a new device can feel complicated, especially when there are so many options. Our customer-care concept is built around making product information easier to understand and helping visitors find the right category for their needs.</p><p>Use the message form to tell us what you are looking for. Our support team can help with product questions, availability, delivery details, and order-related enquiries.</p>
+        <div class="contact-details"><div class="detail-icon">✉</div><div><strong>Email</strong><span>hello@technova.example</span></div></div><div class="contact-details"><div class="detail-icon">◷</div><div><strong>Support hours</strong><span>Saturday – Thursday, 9:00 AM – 6:00 PM</span></div></div>
+        <img class="contact-side-image" src="images/hero-tech.jpg" alt="Laptop and notebook ready for customer support work">
+      </div>
+      <form class="contact-form" onsubmit="submitContactForm(event)"><p class="eyebrow">SEND A MESSAGE</p><h2>How can we help?</h2><p class="form-intro">Fill in the details below and include enough information for us to understand your question.</p>
+        <label for="name">Your name</label><input id="name" name="name" type="text" placeholder="Enter your name" required>
+        <label for="email">Email address</label><input id="email" name="email" type="email" placeholder="you@example.com" required>
+        <label for="topic">What is your question about?</label><select id="topic" name="topic" required><option value="">Choose a topic</option><option>Product information</option><option>Order support</option><option>Returns and exchanges</option><option>Other question</option></select>
+        <label for="message">Your message</label><textarea id="message" name="message" rows="5" placeholder="Tell us how we can help..." required></textarea>
+        <button class="btn btn-primary form-submit" type="submit">Send message <span>→</span></button><p class="form-footnote">Please provide a valid email address so the team can respond.</p>
+      </form>
+    </section>
+    <section class="help-strip"><div class="container help-strip-inner"><div><p class="eyebrow">NEED A QUICK LOOK?</p><h2>Explore before you decide.</h2><p>Visit our product page to see the sample collection and compare everyday gadgets.</p></div><a class="btn btn-dark" href="products.html">Browse products →</a></div></section>
+  </main>
+  <footer class="site-footer"><div class="container footer-main"><div><a class="logo footer-logo" href="index.html"><span class="logo-mark">T</span> TechNova<span class="logo-dot">.</span></a><p>Thoughtful technology for work, play, and everything between.</p></div><div class="footer-links"><strong>Explore</strong><a href="index.html">Home</a><a href="products.html">Products</a><a href="contact.html">Contact us</a></div><div class="footer-links"><strong>Customer care</strong><a href="contact.html">Ask a question</a><a href="contact.html">Product guidance</a></div></div><div class="container footer-bottom"><span>© 2026 TechNova. All rights reserved.</span><span>Built for better everyday tech.</span></div></footer>
+  <script src="script.js"></script>
+</body>
+</html>

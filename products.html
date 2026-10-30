@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Products | TechNova</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Sadman Shams | Student ID: 2330640 -->
+  <header class="site-header">
+    <a class="logo" href="index.html"><span class="logo-mark">T</span> TechNova<span class="logo-dot">.</span></a>
+    <nav class="main-nav" aria-label="Main navigation"><a href="index.html">Home</a><a class="active" href="products.html">Products</a><a href="contact.html">Contact Us</a></nav>
+    <a class="header-cta" href="contact.html">Need help? <span>↗</span></a>
+  </header>
+
+  <main>
+    <section class="page-hero"><div class="container page-hero-inner"><div><p class="eyebrow"><span class="eyebrow-line"></span> THE TECHNOVA COLLECTION</p><h1>Find your next<br><span>favorite gadget.</span></h1><p>Explore practical tech for music, productivity, and daily life.</p></div><img src="images/contact-workspace.jpg" alt="Selection of modern consumer electronics"></div></section>
+    <section class="section container">
+      <div class="section-heading"><div><p class="eyebrow">SELECTED FOR YOU</p><h2>Products worth a closer look.</h2></div><span class="product-count">06 PRODUCTS</span></div>
+      <p class="section-intro">Browse our collection, add items to your cart, and submit your order with your delivery details. Cash on delivery is available for this website checkout flow.</p>
+      <div class="product-grid">
+        <article class="product-card"><div class="product-image"><img src="images/product-headphones.jpg" alt="NovaSound wireless headphones"><span class="product-label">BESTSELLER</span></div><div class="product-info"><p class="product-category">AUDIO</p><h3>NovaSound Headphones</h3><p>Comfortable wireless listening for music, study, and travel.</p><div class="product-bottom"><strong>৳ 3,500</strong><button class="small-btn" onclick="addToCart('NovaSound Headphones', 3500)" aria-label="Add NovaSound Headphones">＋</button></div></div></article>
+        <article class="product-card"><div class="product-image"><img src="images/product-watch.jpg" alt="NovaFit smartwatch"><span class="product-label">POPULAR</span></div><div class="product-info"><p class="product-category">WEARABLES</p><h3>NovaFit Smartwatch</h3><p>Keep everyday activity and notifications close at hand.</p><div class="product-bottom"><strong>৳ 4,200</strong><button class="small-btn" onclick="addToCart('NovaFit Smartwatch', 4200)" aria-label="Add NovaFit Smartwatch">＋</button></div></div></article>
+        <article class="product-card"><div class="product-image"><img src="images/product-laptop.jpg" alt="NovaBook laptop"><span class="product-label">WORKSPACE</span></div><div class="product-info"><p class="product-category">PRODUCTIVITY</p><h3>NovaBook Laptop</h3><p>A clean, capable workspace companion for everyday tasks.</p><div class="product-bottom"><strong>৳ 58,000</strong><button class="small-btn" onclick="addToCart('NovaBook Laptop', 58000)" aria-label="Add NovaBook Laptop">＋</button></div></div></article>
+        <article class="product-card"><div class="product-image"><img src="images/product-earbuds.jpg" alt="Wireless earbuds"><span class="product-label">ON THE GO</span></div><div class="product-info"><p class="product-category">AUDIO</p><h3>NovaBuds Earbuds</h3><p>Compact earbuds for calls, commutes, and playlists.</p><div class="product-bottom"><strong>৳ 2,200</strong><button class="small-btn" onclick="addToCart('NovaBuds Earbuds', 2200)" aria-label="Add NovaBuds Earbuds">＋</button></div></div></article>
+        <article class="product-card"><div class="product-image"><img src="images/product-mouse.jpg" alt="Wireless computer mouse"><span class="product-label">DESK ESSENTIAL</span></div><div class="product-info"><p class="product-category">ACCESSORIES</p><h3>NovaGlide Mouse</h3><p>Simple, comfortable control for work and browsing.</p><div class="product-bottom"><strong>৳ 950</strong><button class="small-btn" onclick="addToCart('NovaGlide Mouse', 950)" aria-label="Add NovaGlide Mouse">＋</button></div></div></article>
+        <article class="product-card"><div class="product-image"><img src="images/product-tablet.jpg" alt="Modern tablet computer"><span class="product-label">TRAVEL READY</span></div><div class="product-info"><p class="product-category">TABLETS</p><h3>NovaTab Tablet</h3><p>A versatile screen for reading, streaming, and everyday tasks.</p><div class="product-bottom"><strong>৳ 15,000</strong><button class="small-btn" onclick="addToCart('NovaTab Tablet', 15000)" aria-label="Add NovaTab Tablet">＋</button></div></div></article>
+      </div>
+      <section class="cart-checkout" id="cart-checkout">
+        <div class="section-heading"><div><p class="eyebrow">YOUR ORDER</p><h2>Shopping cart</h2></div><span class="product-count" id="cart-count">0 ITEMS</span></div>
+        <div id="cart-items" class="cart-items"><p class="cart-empty">Your cart is empty. Add a product above to get started.</p></div>
+        <div class="cart-total-row"><strong>Order total</strong><strong id="cart-total">৳ 0</strong></div>
+        <form id="checkout-form" class="checkout-form" onsubmit="placeOrder(event)">
+          <h3>Delivery details</h3>
+          <div class="checkout-fields">
+            <div><label for="customer-name">Full name</label><input id="customer-name" name="customerName" type="text" required placeholder="Your full name"></div>
+            <div><label for="customer-phone">Phone number</label><input id="customer-phone" name="phone" type="tel" required pattern="[0-9+ ()-]{7,20}" placeholder="01XXXXXXXXX"></div>
+            <div class="checkout-wide"><label for="customer-address">Delivery address</label><textarea id="customer-address" name="address" rows="3" required placeholder="House, road, area, city"></textarea></div>
+            <div><label for="customer-email">Email (optional)</label><input id="customer-email" name="email" type="email" placeholder="you@example.com"></div>
+            <div><label for="payment-method">Payment method</label><select id="payment-method" name="paymentMethod" required><option value="Cash on delivery">Cash on delivery</option></select></div>
+          </div>
+          <button class="btn btn-primary form-submit" type="submit" id="place-order-button">Place order <span>→</span></button>
+          <p class="form-footnote">Orders are saved in this browser for this website project. No online payment is collected.</p>
+        </form>
+        <div id="order-confirmation" class="order-confirmation" role="status" aria-live="polite" hidden></div>
+      </section>
+    </section>
+  </main>
+  <footer class="site-footer"><div class="container footer-main"><div><a class="logo footer-logo" href="index.html"><span class="logo-mark">T</span> TechNova<span class="logo-dot">.</span></a><p>Thoughtful technology for work, play, and everything between.</p></div><div class="footer-links"><strong>Explore</strong><a href="index.html">Home</a><a href="products.html">Products</a><a href="contact.html">Contact us</a></div><div class="footer-links"><strong>Customer care</strong><a href="contact.html">Ask a question</a><a href="contact.html">Product guidance</a></div></div><div class="container footer-bottom"><span>© 2026 TechNova. All rights reserved.</span><span>Built for better everyday tech.</span></div></footer>
+  <script src="script.js"></script>
+</body>
+</html>
